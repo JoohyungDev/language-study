@@ -1,0 +1,18 @@
+from random import *
+
+count = 0
+
+for i in range(1,51):
+    play_time = randint(5,51)
+    if 5 <= play_time <= 15:
+        print("[O] {0} 번째 손님 (소요시간 : {1} 분)".format(i,play_time))
+        count = count+1
+    elif 15 < play_time <= 50:
+        print("[ ] {0} 번째 손님 (소요시간 : {1} 분)".format(i,play_time))
+    
+print("총 탑승 승객 : {0} 분".format(count))
+         
+
+
+   
+
